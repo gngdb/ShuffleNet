@@ -292,6 +292,8 @@ class ShuffleNet(nn.Module):
 
         return F.log_softmax(x, dim=1)
 
+def ShuffleNetG8():
+    return ShuffleNet(groups=8)
 
 if __name__ == "__main__":
     """Testing
